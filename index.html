@@ -8,30 +8,39 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="navigation">
         <a
-          class="logo"
-          href="/"
+          class="navigation-logo"
+          href="./index.html"
           target="_self"
           title="home_page"
           aria-label="home_page"
           >web<span>studio</span></a
         >
         <!-- aria-label при використанні svg читалки прочитують що це таке. атрибут будь-якого тегу -->
-        <ul>
-          <li><a href="/" target="_self">studio</a></li>
-          <li><a href="#" target="_self">portfolio</a></li>
-          <li><a href="#" target="_self">contacts</a></li>
+        <ul class="navigation-list">
+          <li class="navigation-list-item">
+            <a href="/" target="_self">studio</a>
+          </li>
+          <li class="navigation-list-item">
+            <a href="#" target="_self">portfolio</a>
+          </li>
+          <li class="navigation-list-item">
+            <a href="#" target="_self">contacts</a>
+          </li>
         </ul>
       </nav>
       <!-- це не nav, тому що ці посилання не ведуть на інші сторінки -->
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+      <ul class="header-contacts">
+        <li class="header-contacts-item">
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="header-contacts-item">
+          <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
       </ul>
       <!-- також кнопки не входять до nav, тому що вони відкривають модальні вікна -->
       <!-- посилання на соц. мережі теж не входять до nav -->
-
       <div class="connection-status">
         <h2 class="connection-status-title">Connection status</h2>
         <p class="status pending">pending...</p>
@@ -40,43 +49,43 @@
     <main>
       <!-- hero section -->
       <section class="hero">
-        <h1>
+        <h1 class="hero-title">
           Effective Solutions <br />
           for Your Business
         </h1>
         <!-- відкриває модалку -->
-        <button type="button">Order Service</button>
+        <button class="hero-button" type="button">Order Service</button>
       </section>
       <!-- description of our advantages  -->
       <section class="advantages">
         <!-- цей заголовок буде схований за допомогою CSS -->
         <!-- у секції потрібно додавати заголовки для розуміння контексту читалками -->
-        <h2>description of our advantages</h2>
-        <ul>
-          <li>
-            <h3>Strategy</h3>
-            <p>
+        <h2 class="advantages-title">description of our advantages</h2>
+        <ul class="advantages-list">
+          <li class="advantages-list-item">
+            <h3 class="advantages-list-item-title">Strategy</h3>
+            <p class="advantages-list-item-description">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
-          <li>
-            <h3>Punctuality</h3>
-            <p>
+          <li class="advantages-list-item">
+            <h3 class="advantages-list-item-title">Punctuality</h3>
+            <p class="advantages-list-item-description">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
-          <li>
-            <h3>Diligence</h3>
-            <p>
+          <li class="advantages-list-item">
+            <h3 class="advantages-list-item-title">Diligence</h3>
+            <p class="advantages-list-item-description">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
-          <li>
-            <h3>Technologies</h3>
-            <p>
+          <li class="advantages-list-item">
+            <h3 class="advantages-list-item-title">Technologies</h3>
+            <p class="advantages-list-item-description">
               Design practice focused on digital experiences. We bring forth a
               deep passion for problem-solving.
             </p>
@@ -84,19 +93,19 @@
         </ul>
       </section>
       <!-- what are we doing -->
-      <section class="what-we-do">
-        <h2>What are we doing</h2>
-        <ul>
-          <li>
+      <section class="abilities">
+        <h2 class="abilities-title">What are we doing</h2>
+        <ul class="abilities-list">
+          <li class="abilities-list-item">
             <img
               src="./images/img1.jpg"
               width="360"
               alt="MacBook with graphic design software" />
           </li>
-          <li>
+          <li class="abilities-list-item">
             <img src="./images/img2.jpg" width="360" alt="phone application" />
           </li>
-          <li>
+          <li class="abilities-list-item">
             <img
               src="./images/img3.jpg"
               width="360"
@@ -105,16 +114,16 @@
         </ul>
       </section>
       <!-- our team -->
-      <section class="our-team">
-        <h2>Our team</h2>
-        <ul>
-          <li class="team_card">
+      <section class="company-team">
+        <h2 class="company-team-title">Our team</h2>
+        <ul class="company-team-list">
+          <li class="company-team-list-item">
             <img
               src="./images/mark.jpg"
               width="264"
               alt="foto by designer Mark Guerrero" />
-            <h3>Mark Guerrero</h3>
-            <p>Product Designer</p>
+            <h3 class="company-team-list-item-title">Mark Guerrero</h3>
+            <p class="company-team-list-item-role">Product Designer</p>
             <!-- майбутнє оновлення -->
             <!-- <ul>
               <li><a href="" title="Instagram Website"></a></li>
@@ -123,29 +132,29 @@
               <li><a href="" title="LinkedIn Profile"></a></li>
             </ul> -->
           </li>
-          <li class="team_card">
+          <li class="company-team-list-item">
             <img
               src="./images/tom.jpg"
               width="264"
               alt="foto by frontend developer Tom Ford" />
-            <h3>Tom Ford</h3>
-            <p>Frontend Developer</p>
+            <h3 class="company-team-list-item-title">Tom Ford</h3>
+            <p class="company-team-list-item-role">Frontend Developer</p>
           </li>
-          <li class="team_card">
+          <li class="company-team-list-item">
             <img
               src="./images/camila.jpg"
               width="264"
               alt="foto by marketing specialist Camila Garcia" />
-            <h3>Camila Garcia</h3>
-            <p>Marketing</p>
+            <h3 class="company-team-list-item-title">Camila Garcia</h3>
+            <p class="company-team-list-item-role">Marketing Specialist</p>
           </li>
-          <li class="team_card">
+          <li class="company-team-list-item">
             <img
               src="./images/daniel.jpg"
               width="264"
               alt="foto by ui designer Daniel Wilson" />
-            <h3>Daniel Wilson</h3>
-            <p>UI Designer</p>
+            <h3 class="company-team-list-item-title">Daniel Wilson</h3>
+            <p class="company-team-list-item-role">UI Designer</p>
           </li>
         </ul>
       </section>
@@ -164,9 +173,11 @@
     </main>
     <footer>
       <section class="footer_info">
-        <h2>company description</h2>
-        <a href="/" target="_self" title="home_page">web<span>studio</span></a>
-        <p>
+        <h2 class="footer_info-title">company description</h2>
+        <a class="footer-logo" href="./index.html" title="home_page"
+          >web<span>studio</span></a
+        >
+        <p class="footer_info-description">
           Increase the flow of customers and <br />
           sales for your business with digital <br />
           marketing & growth solutions.
