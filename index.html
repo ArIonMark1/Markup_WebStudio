@@ -3,14 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
     <title>WebStudio</title>
   </head>
   <body>
     <header>
       <nav>
-        <a class="logo" href="/" target="_self" title="home_page"
+        <a
+          class="logo"
+          href="/"
+          target="_self"
+          title="home_page"
+          aria-label="home_page"
           >web<span>studio</span></a
         >
+        <!-- aria-label при використанні svg читалки прочитують що це таке. атрибут будь-якого тегу -->
         <ul>
           <li><a href="/" target="_self">studio</a></li>
           <li><a href="#" target="_self">portfolio</a></li>
@@ -24,6 +31,11 @@
       </ul>
       <!-- також кнопки не входять до nav, тому що вони відкривають модальні вікна -->
       <!-- посилання на соц. мережі теж не входять до nav -->
+
+      <div class="connection-status">
+        <h2 class="connection-status-title">Connection status</h2>
+        <p class="status pending">pending...</p>
+      </div>
     </header>
     <main>
       <!-- hero section -->
@@ -161,5 +173,6 @@
         </p>
       </section>
     </footer>
+    <script type="module" src="./js/control_connect.js"></script>
   </body>
 </html>
