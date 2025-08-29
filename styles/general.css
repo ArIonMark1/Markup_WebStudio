@@ -1,0 +1,97 @@
+/* основний колір NAVY BLUE(#2E2F42) */
+/* колір фону CLOUD(#E5E5E5) */
+/* колір тексту   SLATE(#434455)*/
+/* колір заголовків NAVY BLUE(#2E2F42)*/
+/* колір тексту у хедері на темному фоні WHITE(#FFFFFF ) */
+/* колір тексту у футері CLOUD(#F4F4FD)*/
+/* колір кнопок та лого IRIS(#4D5AE5)  */
+
+/* NAVIGATION BLOCK */
+/* NAVY BLUE(#2E2F42), SLATE(#434455), 
+CORNFLOWER(#E7E9FC), IRIS(#4D5AE5), WHITE(#FFFFFF)
+HOVER: OCEAN(#404BBF) */
+
+/* HERO BLOCK */
+/* WHITE(#FFFFFF), IRIS(#4D5AE5), NAVY BLUE(#2E2F42) */
+
+/*  ADVANTAGES BLOCK*/
+/* NAVY BLUE(#2E2F42), SLATE(#434455) */
+
+/* ABILITIES BLOCK */
+/* CORNFLOWER(#E7E9FC), NAVY BLUE(#2E2F42) */
+
+/* COMPANY TEAM BLOCK */
+/* NAVY BLUE(#2E2F42), SLATE(#434455), WHITE(#FFFFFF), CLOUD(#F4F4FD)*/
+
+/* FOOTER BLOCK */
+/* CLOUD(#F4F4FD), IRIS(#4D5AE5), NAVY BLUE(#2E2F42) */
+
+/* general */
+body {
+  color: #434455;
+  background-color: white;
+  box-sizing: border-box;
+}
+/* header */
+.logo {
+  color: #4d5ae5;
+}
+.logo span {
+  color: #2e2f42;
+}
+
+.list {
+  list-style: none;
+}
+.navigation-list .link {
+  color: #2e2f42;
+}
+.navigation-list .link:hover,
+.navigation-list .link:focus {
+  color: #404bbf;
+}
+/* hero */
+.hero {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #2e2f42;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-title {
+  color: white;
+  font-size: large;
+}
+.hero-button {
+  color: white;
+  background-color: #4d5ae5;
+}
+/* section */
+.section-title {
+  color: #2e2f42;
+}
+/* advantages */
+.advantages-list .title {
+  color: #2e2f42;
+}
+/* abilities */
+.abilities-list .item {
+}
+/* company-team */
+.company-team-list {
+}
+.company-team-list img {
+}
+.company-team-list .title {
+}
+.company-team-list .role {
+}
+/* footer */
+.footer_info {
+}
+
+.footer_info .logo span {
+  color: #f4f4fd;
+}
