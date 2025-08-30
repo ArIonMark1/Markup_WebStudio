@@ -50,6 +50,9 @@ body {
 .navigation-list .link:focus {
   color: var(--hover-color);
 }
+.navigation-list .link.current {
+  color: var(--hover-color);
+}
 /* hero */
 .hero {
   display: flex;
