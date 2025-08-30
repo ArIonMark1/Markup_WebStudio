@@ -1,11 +1,3 @@
-/* основний колір NAVY BLUE(#2E2F42) */
-/* колір фону CLOUD(#E5E5E5) */
-/* колір тексту   SLATE(#434455)*/
-/* колір заголовків NAVY BLUE(#2E2F42)*/
-/* колір тексту у хедері на темному фоні WHITE(#FFFFFF ) */
-/* колір тексту у футері CLOUD(#F4F4FD)*/
-/* колір кнопок та лого IRIS(#4D5AE5)  */
-
 /* NAVIGATION BLOCK */
 /* NAVY BLUE(#2E2F42), SLATE(#434455), 
 CORNFLOWER(#E7E9FC), IRIS(#4D5AE5), WHITE(#FFFFFF)
@@ -25,73 +17,98 @@ HOVER: OCEAN(#404BBF) */
 
 /* FOOTER BLOCK */
 /* CLOUD(#F4F4FD), IRIS(#4D5AE5), NAVY BLUE(#2E2F42) */
-
+:root {
+  --title-color: #2e2f42;
+  --accent-color: #4d5ae5;
+  --color-white: #ffffff;
+  --text-color: #434455;
+  --image-bg-color: #e7e9fc;
+  --section-bg-color: #f4f4fd;
+  --hover-color: #404bbf;
+}
 /* general */
 body {
-  color: #434455;
-  background-color: white;
+  color: var(--text-color);
+  background-color: var(--color-white);
   box-sizing: border-box;
 }
 /* header */
 .logo {
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 .logo span {
-  color: #2e2f42;
+  color: var(--title-color);
 }
-
+/* general list */
 .list {
   list-style: none;
 }
 .navigation-list .link {
-  color: #2e2f42;
+  color: var(--title-color);
 }
 .navigation-list .link:hover,
 .navigation-list .link:focus {
-  color: #404bbf;
+  color: var(--hover-color);
 }
 /* hero */
 .hero {
   display: flex;
   height: 100%;
   width: 100%;
-  background-color: #2e2f42;
+  background-color: var(--title-color);
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.hero-title {
-  color: white;
+.hero .title {
+  color: var(--color-white);
   font-size: large;
 }
-.hero-button {
-  color: white;
-  background-color: #4d5ae5;
-}
+/* .hero .button {
+  color: var(--color-white);
+  background-color: var(--accent-color);
+} */
 /* section */
 .section-title {
-  color: #2e2f42;
+  color: var(--title-color);
 }
 /* advantages */
 .advantages-list .title {
-  color: #2e2f42;
+  color: var(--title-color);
 }
 /* abilities */
 .abilities-list .item {
 }
 /* company-team */
-.company-team-list {
+.company-team {
+  background-color: var(--section-bg-color);
+}
+.company-team-list .item {
+  background-color: var(--color-white);
 }
 .company-team-list img {
 }
 .company-team-list .title {
+  color: var(--title-color);
 }
 .company-team-list .role {
 }
 /* footer */
 .footer_info {
+  background-color: var(--title-color);
 }
 
 .footer_info .logo span {
-  color: #f4f4fd;
+  color: var(--section-bg-color);
+}
+.footer_info .description {
+  color: var(--section-bg-color);
+}
+
+/* button */
+.button {
+  color: var(--color-white);
+  background-color: var(--accent-color);
+}
+.button.primary {
 }
