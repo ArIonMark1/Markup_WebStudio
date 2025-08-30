@@ -1,0 +1,114 @@
+/* NAVIGATION BLOCK */
+/* NAVY BLUE(#2E2F42), SLATE(#434455), 
+CORNFLOWER(#E7E9FC), IRIS(#4D5AE5), WHITE(#FFFFFF)
+HOVER: OCEAN(#404BBF) */
+
+/* HERO BLOCK */
+/* WHITE(#FFFFFF), IRIS(#4D5AE5), NAVY BLUE(#2E2F42) */
+
+/*  ADVANTAGES BLOCK*/
+/* NAVY BLUE(#2E2F42), SLATE(#434455) */
+
+/* ABILITIES BLOCK */
+/* CORNFLOWER(#E7E9FC), NAVY BLUE(#2E2F42) */
+
+/* COMPANY TEAM BLOCK */
+/* NAVY BLUE(#2E2F42), SLATE(#434455), WHITE(#FFFFFF), CLOUD(#F4F4FD)*/
+
+/* FOOTER BLOCK */
+/* CLOUD(#F4F4FD), IRIS(#4D5AE5), NAVY BLUE(#2E2F42) */
+:root {
+  --title-color: #2e2f42;
+  --accent-color: #4d5ae5;
+  --color-white: #ffffff;
+  --text-color: #434455;
+  --image-bg-color: #e7e9fc;
+  --section-bg-color: #f4f4fd;
+  --hover-color: #404bbf;
+}
+/* general */
+body {
+  color: var(--text-color);
+  background-color: var(--color-white);
+  box-sizing: border-box;
+}
+/* header */
+.logo {
+  color: var(--accent-color);
+}
+.logo span {
+  color: var(--title-color);
+}
+/* general list */
+.list {
+  list-style: none;
+}
+.navigation-list .link {
+  color: var(--title-color);
+}
+.navigation-list .link:hover,
+.navigation-list .link:focus {
+  color: var(--hover-color);
+}
+/* hero */
+.hero {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: var(--title-color);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.hero .title {
+  color: var(--color-white);
+  font-size: large;
+}
+/* .hero .button {
+  color: var(--color-white);
+  background-color: var(--accent-color);
+} */
+/* section */
+.section-title {
+  color: var(--title-color);
+}
+/* advantages */
+.advantages-list .title {
+  color: var(--title-color);
+}
+/* abilities */
+.abilities-list .item {
+}
+/* company-team */
+.company-team {
+  background-color: var(--section-bg-color);
+}
+.company-team-list .item {
+  background-color: var(--color-white);
+}
+.company-team-list img {
+}
+.company-team-list .title {
+  color: var(--title-color);
+}
+.company-team-list .role {
+}
+/* footer */
+.footer_info {
+  background-color: var(--title-color);
+}
+
+.footer_info .logo span {
+  color: var(--section-bg-color);
+}
+.footer_info .description {
+  color: var(--section-bg-color);
+}
+
+/* button */
+.button {
+  color: var(--color-white);
+  background-color: var(--accent-color);
+}
+.button.primary {
+}
