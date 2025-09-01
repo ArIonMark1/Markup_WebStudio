@@ -17,7 +17,7 @@ async function checkConnection() {
 
     statusDiv[0].classList.remove("pending");
     statusDiv[0].classList.add("online");
-    statusDiv[0].textContent = "online";
+    statusDiv[0].textContent = "Online";
     clearInterval(connectionControl);
     // Fade out the connection status
     setTimeout(() => {
@@ -26,14 +26,14 @@ async function checkConnection() {
   } catch (error) {
     statusDiv[0].classList.remove("pending");
     statusDiv[0].classList.add("offline");
-    statusDiv[0].textContent = "offline";
+    statusDiv[0].textContent = "Offline";
 
     setTimeout(() => {
       statusDiv[0].classList.remove("offline");
       statusDiv[0].classList.add("pending");
-      statusDiv[0].textContent = "pending...";
-    }, 3000);
+      statusDiv[0].textContent = "Pending...";
+    }, 2000);
   }
 }
 
-const connectionControl = setInterval(checkConnection, 5000);
+const connectionControl = setInterval(checkConnection, 6000);

@@ -1,9 +1,9 @@
 .connection-status {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--color-white);
   padding: 10px;
   border-radius: 5px;
   font-family: Arial, sans-serif;
@@ -17,7 +17,6 @@
   to {
     opacity: 0;
     display: none;
-    /* visibility: hidden; */
   }
 }
 .connection-status-title {
@@ -29,12 +28,12 @@
   margin: 0;
   font-size: 14px;
 }
-.pending {
-  color: orange;
+.status.pending {
+  color: var(--color-pending);
 }
-.online {
-  color: green;
+.status.online {
+  color: var(--color-online);
 }
-.offline {
-  color: red;
+.status.offline {
+  color: var(--color-offline);
 }
