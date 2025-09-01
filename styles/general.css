@@ -25,13 +25,42 @@ HOVER: OCEAN(#404BBF) */
   --image-bg-color: #e7e9fc;
   --section-bg-color: #f4f4fd;
   --hover-color: #404bbf;
+
+  --color-pending: #ffa500;
+  --color-online: #19ba19;
+  --color-offline: #ff0000;
 }
 /* general */
 body {
   color: var(--text-color);
   background-color: var(--color-white);
   box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
 }
+a {
+  color: var(--title-color);
+  text-decoration: none;
+}
+/* button */
+.button {
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+}
+.button.primary {
+  color: var(--color-white);
+  background-color: var(--accent-color);
+}
+.button.secondary {
+  color: var(--accent-color);
+  background-color: var(--section-bg-color);
+}
+.button.secondary:hover {
+  color: var(--color-white);
+  background-color: var(--accent-color);
+}
+
 /* header */
 .logo {
   color: var(--accent-color);
@@ -43,9 +72,6 @@ body {
 .list {
   list-style: none;
 }
-.navigation-list .link {
-  color: var(--title-color);
-}
 .navigation-list .link:hover,
 .navigation-list .link:focus {
   color: var(--hover-color);
@@ -53,49 +79,12 @@ body {
 .navigation-list .link.current {
   color: var(--hover-color);
 }
-/* hero */
-.hero {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  background-color: var(--title-color);
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+/* header contact list */
+.header-contacts .link {
+  color: var(--text-color);
+  text-decoration: none;
 }
-.hero .title {
-  color: var(--color-white);
-  font-size: large;
-}
-/* .hero .button {
-  color: var(--color-white);
-  background-color: var(--accent-color);
-} */
-/* section */
-.section-title {
-  color: var(--title-color);
-}
-/* advantages */
-.advantages-list .title {
-  color: var(--title-color);
-}
-/* abilities */
-.abilities-list .item {
-}
-/* company-team */
-.company-team {
-  background-color: var(--section-bg-color);
-}
-.company-team-list .item {
-  background-color: var(--color-white);
-}
-.company-team-list img {
-}
-.company-team-list .title {
-  color: var(--title-color);
-}
-.company-team-list .role {
-}
+
 /* footer */
 .footer_info {
   background-color: var(--title-color);
@@ -106,12 +95,4 @@ body {
 }
 .footer_info .description {
   color: var(--section-bg-color);
-}
-
-/* button */
-.button {
-  color: var(--color-white);
-  background-color: var(--accent-color);
-}
-.button.primary {
 }
