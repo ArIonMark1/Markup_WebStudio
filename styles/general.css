@@ -54,6 +54,9 @@ a {
   color: var(--color-white);
   background-color: var(--accent-color);
 }
+.button.primary:hover {
+  background-color: var(--hover-color);
+}
 .button.secondary {
   color: var(--accent-color);
   background-color: var(--section-bg-color);
@@ -89,7 +92,10 @@ a {
 /* header contact list */
 .header-contacts .link {
   color: var(--text-color);
-  text-decoration: none;
+}
+.header-contacts .link:hover,
+.header-contacts .link:focus {
+  color: var(--hover-color);
 }
 
 /* footer */
