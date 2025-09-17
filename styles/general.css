@@ -18,17 +18,26 @@ HOVER: OCEAN(#404BBF) */
 /* FOOTER BLOCK */
 /* CLOUD(#F4F4FD), IRIS(#4D5AE5), NAVY BLUE(#2E2F42) */
 :root {
-  --title-color: #2e2f42;
   --accent-color: #4d5ae5;
-  --color-white: #ffffff;
+  --hover-color: #404bbf;
+  --title-color: #2e2f42;
+  --valid-fields: #31d0aa;
   --text-color: #434455;
+  --color-white: #ffffff;
   --image-bg-color: #e7e9fc;
   --section-bg-color: #f4f4fd;
-  --hover-color: #404bbf;
 
   --color-pending: #ffa500;
   --color-online: #19ba19;
   --color-offline: #ff0000;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 /* general */
 body {
@@ -36,8 +45,9 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-
   color: var(--text-color);
+  margin: 0;
+  padding: 0;
 }
 a {
   color: var(--title-color);
@@ -78,7 +88,19 @@ a {
   line-height: 1.2;
   color: var(--title-color);
 }
-
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* section title*/
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  color: var(--title-color);
+  margin: 0;
+}
 /* header */
 .logo {
   font-family: "Raleway", sans-serif;
