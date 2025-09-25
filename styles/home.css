@@ -46,3 +46,16 @@
   width: 264px;
   background-color: var(--color-white);
 }
+.company-team-list .item img {
+  outline: 1px solid var(--valid-fields);
+  display: block;
+}
+.company-team-list .title {
+  outline: 1px solid var(--valid-fields);
+  margin: 0;
+  max-width: 100%;
+}
+.company-team-list .role {
+  outline: 1px solid var(--valid-fields);
+  margin: 0;
+}
