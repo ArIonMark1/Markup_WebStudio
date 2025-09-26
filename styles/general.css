@@ -120,6 +120,7 @@ a {
 .navigation {
   display: flex;
   align-items: center;
+  margin-left: 0;
 }
 .navigation-list {
   display: flex;
@@ -130,6 +131,7 @@ a {
 .header-contacts {
   display: flex;
   gap: 40px;
+  margin-right: 0;
 }
 .logo {
   font-family: "Raleway", sans-serif;

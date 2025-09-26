@@ -13,6 +13,7 @@
   line-height: 1.07;
   /* letter-spacing: 1.12px;  font-size(px) / letter-spacing(px) = em*/
   letter-spacing: 0.02em;
+  margin-bottom: 48px;
 }
 .hero .button {
   border-radius: 4px;
@@ -21,12 +22,26 @@
 }
 
 /* advantages */
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.advantages .section-title {
+  /* margin-bottom: 72px; */
+  height: 0;
+  visibility: hidden;
+}
+.advantages-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
 
 /* abilities */
 
 /* company-team */
 .company-team {
-  /* text-align: center; */
+  text-align: center;
   background-color: var(--section-bg-color);
   padding-top: 120px;
   padding-bottom: 120px;
@@ -34,8 +49,7 @@
 .company-team-list {
   display: flex;
   justify-content: center;
-  margin: 0;
-  padding: 0;
+
   gap: 24px;
   padding-top: 72px;
 }
