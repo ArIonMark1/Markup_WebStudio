@@ -55,8 +55,8 @@ a {
 }
 .container {
   width: 1200px;
-  padding-right: 36px;
-  padding-left: 36px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin: 0 auto;
   outline: 1px solid var(--color-pending);
 }
@@ -94,6 +94,7 @@ a {
   font-weight: 500;
   line-height: 1.2;
   color: var(--title-color);
+  margin: 0;
 }
 .section {
   display: flex;
