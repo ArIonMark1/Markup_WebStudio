@@ -31,14 +31,18 @@ HOVER: OCEAN(#404BBF) */
   --color-online: #19ba19;
   --color-offline: #ff0000;
 }
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0 auto;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
 }
 /* general */
 body {
@@ -47,7 +51,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
-  margin: 0;
 }
 a {
   color: var(--title-color);
@@ -109,6 +112,10 @@ a {
   color: var(--title-color);
   margin: 0;
 }
+/* general list */
+.list {
+  list-style: none;
+}
 /* header */
 .header {
   padding: 24px 0px;
@@ -121,7 +128,6 @@ a {
 .navigation {
   display: flex;
   align-items: center;
-  margin-left: 0;
 }
 .navigation-list {
   display: flex;
@@ -142,16 +148,9 @@ a {
   line-height: 1.16;
   text-transform: uppercase;
   color: var(--accent-color);
-  /* margin-right: 74px; */
 }
 .logo span {
   color: var(--title-color);
-}
-/* general list */
-.list {
-  list-style: none;
-  padding: 0;
-  /* margin: 0; */
 }
 .navigation-list .link:hover,
 .navigation-list .link:focus {
