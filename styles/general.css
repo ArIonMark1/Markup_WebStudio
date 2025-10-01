@@ -17,6 +17,13 @@ HOVER: OCEAN(#404BBF) */
 
 /* FOOTER BLOCK */
 /* CLOUD(#F4F4FD), IRIS(#4D5AE5), NAVY BLUE(#2E2F42) */
+
+/* .class decor block {
+  1 geometry
+  2 color & text
+  3 design effects
+} */
+
 :root {
   --accent-color: #4d5ae5;
   --hover-color: #404bbf;
@@ -93,11 +100,11 @@ a {
 }
 /* title */
 .title {
+  margin: 0;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   color: var(--title-color);
-  margin: 0;
 }
 .section {
   display: flex;
@@ -106,19 +113,21 @@ a {
 }
 /* section title*/
 .section-title {
+  margin: 0;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
   color: var(--title-color);
-  margin: 0;
 }
 /* general list */
 .list {
   list-style: none;
 }
 /* header */
-.header {
+.header .link {
+  display: block;
   padding: 24px 0px;
+  /* outline: 1px solid red; */
 }
 .header-container {
   display: flex;
@@ -129,18 +138,25 @@ a {
   display: flex;
   align-items: center;
 }
+/* header navigation */
 .navigation-list {
   display: flex;
-  align-items: center;
-  gap: 40px;
   margin-left: 76px;
 }
-.header-contacts {
-  display: flex;
-  gap: 40px;
-  margin-right: 0;
+
+.navigation-list .item + .item,
+.header-contacts .item + .item {
+  margin-left: 40px;
 }
+
+.navigation-list .item,
+.header-contacts .item {
+  position: relative;
+}
+
 .logo {
+  display: block;
+  padding: 24px 0px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -156,8 +172,24 @@ a {
 .navigation-list .link:focus {
   color: var(--hover-color);
 }
+.navigation-list .link:hover:after,
+.navigation-list .link:focus:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  content: "";
+  background-color: var(--hover-color);
+  border-radius: 4px;
+  bottom: 0px;
+}
+
 .navigation-list .link.current {
   color: var(--hover-color);
+}
+/* header contacts */
+.header-contacts {
+  display: flex;
 }
 /* header contact list */
 .header-contacts .link {
@@ -167,7 +199,17 @@ a {
 .header-contacts .link:focus {
   color: var(--hover-color);
 }
-
+.header-contacts .link:hover:after,
+.header-contacts .link:focus:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  content: "";
+  background-color: var(--hover-color);
+  border-radius: 4px;
+  bottom: 0px;
+}
 /* footer */
 .footer_info {
   background-color: var(--title-color);
