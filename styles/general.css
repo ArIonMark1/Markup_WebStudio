@@ -127,11 +127,10 @@ a {
 .header .link {
   display: block;
   padding: 24px 0px;
-  /* outline: 1px solid red; */
 }
 .header-container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 .navigation {
@@ -148,7 +147,10 @@ a {
 .header-contacts .item + .item {
   margin-left: 40px;
 }
-
+/* .navigation-list .item:not(:last-child),
+.header-contacts .item:not(:last-child) {
+  margin-right: 40px;
+} */
 .navigation-list .item,
 .header-contacts .item {
   position: relative;
@@ -190,6 +192,7 @@ a {
 /* header contacts */
 .header-contacts {
   display: flex;
+  margin-left: auto;
 }
 /* header contact list */
 .header-contacts .link {
