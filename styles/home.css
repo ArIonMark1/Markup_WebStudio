@@ -32,16 +32,18 @@
 }
 .advantages-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 .advantages-list .item {
-  max-width: 265px;
+  width: calc((100% - 72px) / 4);
+  margin-right: 24px;
 }
-
+.advantages-list .item:last-child {
+  margin-right: 0px;
+}
 .advantages-list .title {
   margin-bottom: 8px;
 }
-
 /* abilities */
 .abilities-container {
   text-align: center;
@@ -51,41 +53,54 @@
 }
 .abilities-list {
   display: flex;
-  justify-content: space-between;
+  max-width: 100%;
 }
-
+.abilities-list .item {
+  width: calc((100% - 50px) / 3);
+  margin-right: 25px;
+}
+.abilities-list .item:last-child {
+  margin-right: 0px;
+}
 .abilities-list img {
   display: block;
+  min-width: 100%;
 }
 /* company-team */
 .company-team {
-  text-align: center;
   background-color: var(--section-bg-color);
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.company-team-list {
-  display: flex;
-  justify-content: space-between;
+.company-team-container {
+  text-align: center;
 }
 .company-team .section-title {
   margin-bottom: 72px;
 }
+.company-team-list {
+  display: flex;
+  min-width: 100%;
+}
 .company-team-list .item {
-  text-align: center;
-  max-width: 264px;
+  width: calc((100% - 75px) / 4);
+  margin-right: 25px;
   background-color: var(--color-white);
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 68, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+.company-team-list .item:last-child {
+  margin-right: 0px;
+}
 .company-team-list .item img {
   display: block;
+  min-width: 100%;
 }
 .company-team-list .description {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.company-team-list .title {
+.company-team-list .description .title {
   margin-bottom: 8px;
 }

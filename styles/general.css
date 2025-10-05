@@ -217,8 +217,18 @@ a {
 /* footer */
 .footer_info {
   background-color: var(--title-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-
+.footer_info .title {
+  height: 0;
+  visibility: hidden;
+}
+.footer_info .logo {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 16px;
+}
 .footer_info .logo span {
   color: var(--section-bg-color);
 }
