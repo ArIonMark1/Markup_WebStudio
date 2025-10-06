@@ -34,17 +34,20 @@
   display: flex;
   flex-wrap: nowrap;
 }
-.advantages-list .item {
+.advantages-list > .item {
   width: calc((100% - 72px) / 4);
   margin-right: 24px;
 }
-.advantages-list .item:last-child {
+.advantages-list > .item:last-child {
   margin-right: 0px;
 }
-.advantages-list .title {
+.advantages-list > .title {
   margin-bottom: 8px;
 }
 /* abilities */
+.abilities {
+  padding-bottom: 120px;
+}
 .abilities-container {
   text-align: center;
 }
@@ -55,11 +58,11 @@
   display: flex;
   max-width: 100%;
 }
-.abilities-list .item {
+.abilities-list > .item {
   width: calc((100% - 50px) / 3);
   margin-right: 25px;
 }
-.abilities-list .item:last-child {
+.abilities-list > .item:last-child {
   margin-right: 0px;
 }
 .abilities-list img {
@@ -82,7 +85,7 @@
   display: flex;
   min-width: 100%;
 }
-.company-team-list .item {
+.company-team-list > .item {
   width: calc((100% - 75px) / 4);
   margin-right: 25px;
   background-color: var(--color-white);
@@ -90,10 +93,10 @@
   box-shadow: 0px 1px 6px rgba(46, 47, 68, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.company-team-list .item:last-child {
+.company-team-list > .item:last-child {
   margin-right: 0px;
 }
-.company-team-list .item img {
+.company-team-list > .item img {
   display: block;
   min-width: 100%;
 }

@@ -14,6 +14,7 @@
 /* filter list */
 .filter-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding-top: 96px;
   padding-bottom: 72px;
@@ -27,17 +28,16 @@
   flex-wrap: wrap;
   padding-bottom: 120px;
 }
-.content-list .item {
-  background-color: #e7e9fc;
+.content-list > .item {
   width: calc((100% - 50px) / 3);
 }
-.content-list .item:not(:nth-child(3n)) {
+.content-list > .item:not(:nth-child(3n)) {
   margin-right: 25px;
 }
-.content-list .item:not(:nth-last-child(-n + 3)) {
+.content-list > .item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 48px;
 }
-.content-list .item img {
+.content-list > .item img {
   display: block;
   width: 100%;
 }
