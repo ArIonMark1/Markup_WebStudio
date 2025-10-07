@@ -4,8 +4,7 @@
   padding: 12px 24px;
 }
 .portfolio .button:hover {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--box-shabow);
 }
 .portfolio .section-title {
   height: 0;
@@ -29,7 +28,8 @@
   padding-bottom: 120px;
 }
 .content-list > .item {
-  width: calc((100% - 50px) / 3);
+  /* calc((100% - кіль-сть_відступів_в_рядку * довжина_одного_відступу_в_рядку) / кіль-сть_елементів_в_рядку) */
+  flex-basis: calc((100% - 50px) / 3);
 }
 .content-list > .item:not(:nth-child(3n)) {
   margin-right: 25px;
@@ -39,17 +39,16 @@
 }
 .content-list > .item img {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 .short-description {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-right: 16px;
   padding-left: 16px;
-  border-right: 1px solid #e7e9fc;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-radius: 0 0 4px 4px;
+  border-right: 1px solid var(--image-bg-color);
+  border-bottom: 1px solid var(--image-bg-color);
+  border-left: 1px solid var(--image-bg-color);
 }
 /* .content-list .item:nth-child(3n) {
   margin-right: 0;
