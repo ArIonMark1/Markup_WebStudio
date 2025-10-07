@@ -33,6 +33,10 @@ HOVER: OCEAN(#404BBF) */
   --color-white: #ffffff;
   --image-bg-color: #e7e9fc;
   --section-bg-color: #f4f4fd;
+  --box-shabow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  --home-box-shadow: 0px 1px 6px rgba(46, 47, 68, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
   --color-pending: #ffa500;
   --color-online: #19ba19;
@@ -64,12 +68,11 @@ a {
   text-decoration: none;
 }
 .container {
-  /* width: 1200px; */
   width: 1160px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
-  outline: 1px solid var(--color-pending);
+  /* outline: 1px solid var(--color-pending); */
 }
 /* button */
 .button {
@@ -125,6 +128,9 @@ a {
   list-style: none;
 }
 /* header */
+.header {
+  border-bottom: 1px solid var(--image-bg-color);
+}
 .header .link {
   display: block;
   padding: 24px 0px;
