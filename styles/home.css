@@ -2,9 +2,23 @@
 /* hero */
 
 .hero {
-  background-color: var(--title-color);
-  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
   padding: 188px 0;
+
+  max-width: 1440px;
+  height: 600px;
+
+  outline: 1px solid forestgreen;
+  align-self: center;
+  text-align: center;
+
+  background-color: var(--title-color);
+  background-image: var(--gradient), url("../images/decor_img/office.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero .title {
   margin-bottom: 48px;
