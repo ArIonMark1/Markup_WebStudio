@@ -9,7 +9,7 @@
   max-width: 1440px;
   height: 600px;
 
-  outline: 1px solid forestgreen;
+  /* outline: 1px solid forestgreen; */
   align-self: center;
   text-align: center;
 
@@ -55,6 +55,34 @@
 .advantages-list > .item:last-child {
   margin-right: 0px;
 }
+.advantages-list > .item::before {
+  content: "";
+  display: block;
+  height: 112px;
+
+  margin-bottom: 8px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  border-radius: 4px;
+
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--section-bg-color);
+}
+.icon-antenna::before {
+  background-image: url("../images/decor_img/antenna.svg");
+}
+.icon-clock::before {
+  background-image: url("../images/decor_img/clock.svg");
+}
+.icon-diagram::before {
+  background-image: url("../images/decor_img/diagram.svg");
+}
+.icon-astronaut::before {
+  background-image: url("../images/decor_img/astronaut.svg");
+}
+
 .advantages-list > .title {
   margin-bottom: 8px;
 }
@@ -117,7 +145,43 @@
 .company-team-list .description {
   padding-top: 32px;
   padding-bottom: 32px;
+  /* outline: 1px solid teal; */
 }
 .company-team-list .description .title {
   margin-bottom: 8px;
+}
+.description .social-links {
+  /* outline: 1px solid red; */
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+.description .social-links .item {
+  /* outline: 1px solid forestgreen; */
+}
+.description .social-links .item + .item {
+  margin-left: 24px;
+}
+
+.description .social-links .item .link::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: var(--accent-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+.description .social-links .link-instagram::before {
+  background-image: url("../images/decor_img/instagram.svg");
+}
+.description .social-links .link-twitter::before {
+  background-image: url("../images/decor_img/twitter.svg");
+}
+.description .social-links .link-facebook::before {
+  background-image: url("../images/decor_img/facebook.svg");
+}
+.description .social-links .link-linkedin::before {
+  background-image: url("../images/decor_img/linkedin.svg");
 }
