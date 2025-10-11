@@ -65,6 +65,7 @@
   padding-top: 24px;
   border-radius: 4px;
 
+  background-size: 64px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--section-bg-color);
@@ -170,6 +171,7 @@
   background-color: var(--accent-color);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 24px;
   border-radius: 50%;
 }
 .description .social-links .link-instagram::before {
@@ -201,7 +203,7 @@
 }
 .customers-list > .item > .link {
   display: block;
-  width: 168px;
+  min-width: 168px;
   height: 88px;
   border: 2px solid var(--border-grey);
   border-radius: 4px;

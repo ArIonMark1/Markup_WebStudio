@@ -282,6 +282,7 @@ a {
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 24px;
 }
 .footer_info .social-media__list .link-instagram::before {
   background-image: url("../images/decor_img/instagram.svg");
