@@ -9,7 +9,6 @@
   max-width: 1440px;
   height: 600px;
 
-  /* outline: 1px solid forestgreen; */
   align-self: center;
   text-align: center;
 
@@ -145,19 +144,14 @@
 .company-team-list .description {
   padding-top: 32px;
   padding-bottom: 32px;
-  /* outline: 1px solid teal; */
 }
 .company-team-list .description .title {
   margin-bottom: 8px;
 }
 .description .social-links {
-  /* outline: 1px solid red; */
   margin-top: 8px;
   display: flex;
   justify-content: center;
-}
-.description .social-links .item {
-  /* outline: 1px solid forestgreen; */
 }
 .description .social-links .item + .item {
   margin-left: 24px;
