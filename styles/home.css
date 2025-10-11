@@ -65,7 +65,6 @@
   padding-top: 24px;
   border-radius: 4px;
 
-  /* background-size: contain; */
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--section-bg-color);
@@ -184,4 +183,47 @@
 }
 .description .social-links .link-linkedin::before {
   background-image: url("../images/decor_img/linkedin.svg");
+}
+/* Customers */
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.customers-container {
+  text-align: center;
+}
+.customers .customers-list {
+  display: flex;
+  margin-top: 72px;
+}
+.customers .customers-list .item + .item {
+  margin-left: 24px;
+}
+.customers-list > .item > .link {
+  display: block;
+  width: 168px;
+  height: 88px;
+  border: 2px solid var(--border-grey);
+  border-radius: 4px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.customers-list > .item > .link.link-yaco {
+  background-image: url("../images/decor_img/Logo1.svg");
+}
+.customers-list > .item > .link.link-tagline {
+  background-image: url("../images/decor_img/Logo2.svg");
+}
+.customers-list > .item > .link.link-company {
+  background-image: url("../images/decor_img/Logo3.svg");
+}
+.customers-list > .item > .link.link-foster {
+  background-image: url("../images/decor_img/Logo4.svg");
+}
+.customers-list > .item > .link.link-brand {
+  background-image: url("../images/decor_img/Logo5.svg");
+}
+.customers-list > .item > .link.link-cube {
+  background-image: url("../images/decor_img/Logo6.svg");
 }
