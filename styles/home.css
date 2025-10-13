@@ -142,22 +142,42 @@
   min-width: 100%;
 }
 .company-team-list .description {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .company-team-list .description .title {
   margin-bottom: 8px;
 }
+/* ########### */
 .description .social-links {
-  margin-top: 8px;
+  margin-top: 16px;
   display: flex;
   justify-content: center;
 }
 .description .social-links .item + .item {
   margin-left: 24px;
 }
-
-.description .social-links .item .link::before {
+.description .social-links__link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  /* padding: 12px; */
+  border-radius: 50%;
+}
+.description .social-links__link .icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--link-color);
+  transition: fill 0.3s ease;
+}
+.description .social-links__link:hover,
+.description .social-links__link:hover .icon {
+  background-color: var(--accent-color);
+  fill: var(--color-white);
+}
+/* .description .social-links .item .link::before {
   content: "";
   display: block;
   width: 40px;
@@ -179,7 +199,7 @@
 }
 .description .social-links .link-linkedin::before {
   background-image: url("../images/decor_img/linkedin.svg");
-}
+} */
 /* Customers */
 .customers {
   padding-top: 120px;
