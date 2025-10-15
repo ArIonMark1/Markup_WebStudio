@@ -155,7 +155,7 @@
   justify-content: center;
 }
 .description .social-links .item + .item {
-  margin-left: 24px;
+  margin-left: 14px;
 }
 .description .social-links__link {
   display: flex;
@@ -165,6 +165,7 @@
   align-items: center;
   /* padding: 12px; */
   border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
 .description .social-links__link .icon {
   width: 20px;
@@ -173,33 +174,13 @@
   transition: fill 0.3s ease;
 }
 .description .social-links__link:hover,
-.description .social-links__link:hover .icon {
+.description .social-links__link:focus {
   background-color: var(--accent-color);
+}
+.description .social-links__link:hover .icon,
+.description .social-links__link:focus .icon {
   fill: var(--color-white);
 }
-/* .description .social-links .item .link::before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-color: var(--accent-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 24px;
-  border-radius: 50%;
-}
-.description .social-links .link-instagram::before {
-  background-image: url("../images/decor_img/instagram.svg");
-}
-.description .social-links .link-twitter::before {
-  background-image: url("../images/decor_img/twitter.svg");
-}
-.description .social-links .link-facebook::before {
-  background-image: url("../images/decor_img/facebook.svg");
-}
-.description .social-links .link-linkedin::before {
-  background-image: url("../images/decor_img/linkedin.svg");
-} */
 /* Customers */
 .customers {
   padding-top: 120px;
@@ -216,30 +197,26 @@
   margin-left: 24px;
 }
 .customers-list > .item > .link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 168px;
   height: 88px;
-  border: 2px solid var(--border-grey);
+  border: 1px solid var(--border-grey);
   border-radius: 4px;
-
-  background-repeat: no-repeat;
-  background-position: center;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
 }
-.customers-list > .item > .link.link-yaco {
-  background-image: url("../images/decor_img/Logo1.svg");
+.customers-list > .item > .link .icon {
+  width: 104px;
+  height: 56px;
+  fill: var(--border-grey);
+  transition: fill 0.3s ease;
 }
-.customers-list > .item > .link.link-tagline {
-  background-image: url("../images/decor_img/Logo2.svg");
-}
-.customers-list > .item > .link.link-company {
-  background-image: url("../images/decor_img/Logo3.svg");
-}
-.customers-list > .item > .link.link-foster {
-  background-image: url("../images/decor_img/Logo4.svg");
-}
-.customers-list > .item > .link.link-brand {
-  background-image: url("../images/decor_img/Logo5.svg");
-}
-.customers-list > .item > .link.link-cube {
-  background-image: url("../images/decor_img/Logo6.svg");
+.customers-list > .item > .link:hover,
+.customers-list > .item > .link:focus,
+.customers-list > .item > .link:hover .icon,
+.customers-list > .item > .link:focus .icon {
+  border-color: var(--hover-color);
+  fill: var(--hover-color);
 }
