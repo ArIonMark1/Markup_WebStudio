@@ -213,10 +213,10 @@
   fill: var(--border-grey);
   transition: fill 0.3s ease;
 }
-.customers-list > .item > .link:hover,
-.customers-list > .item > .link:focus,
-.customers-list > .item > .link:hover .icon,
-.customers-list > .item > .link:focus .icon {
+.customers-list .link:hover,
+.customers-list .link:hover .icon,
+.customers-list .link:focus,
+.customers-list .link:focus .icon {
   border-color: var(--hover-color);
   fill: var(--hover-color);
 }
