@@ -30,6 +30,11 @@
 .content-list > .item {
   /* calc((100% - кіль-сть_відступів_в_рядку * довжина_одного_відступу_в_рядку) / кіль-сть_елементів_в_рядку) */
   flex-basis: calc((100% - 50px) / 3);
+  transition: box-shadow 0.3s ease;
+}
+.content-list > .item:hover,
+.content-list > .item:focus {
+  box-shadow: var(--portfolio-card-shadow-active);
 }
 .content-list > .item:not(:nth-child(3n)) {
   margin-right: 25px;
@@ -42,14 +47,11 @@
   max-width: 100%;
 }
 .short-description {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-right: 16px;
-  padding-left: 16px;
-  border-right: 1px solid var(--image-bg-color);
-  border-bottom: 1px solid var(--image-bg-color);
-  border-left: 1px solid var(--image-bg-color);
+  padding: 32px 16px;
+  border: 1px solid var(--image-bg-color);
+  border-top: none;
 }
+
 /* .content-list .item:nth-child(3n) {
   margin-right: 0;
 }
