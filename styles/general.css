@@ -82,6 +82,7 @@ main {
 a {
   color: var(--title-color);
   text-decoration: none;
+  outline: transparent;
 }
 /* content container */
 .container {
@@ -89,7 +90,7 @@ a {
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
-  outline: 1px solid var(--color-pending);
+  /* outline: 1px solid var(--color-pending); */
 }
 /* button */
 .button {
@@ -278,7 +279,9 @@ a {
   fill: var(--color-white);
 }
 .footer_info .media-list .media-list__link:hover,
-.footer_info .media-list .media-list__link:hover .icon {
+.footer_info .media-list .media-list__link:hover .icon,
+.footer_info .media-list .media-list__link:focus,
+.footer_info .media-list .media-list__link:focus .icon {
   background-color: var(--accent-color);
 }
 /* .footer_info .social-media__list .item .link::before {

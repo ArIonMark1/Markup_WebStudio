@@ -3,7 +3,8 @@
   border-radius: 4px;
   padding: 12px 24px;
 }
-.portfolio .button:hover {
+.portfolio .button:hover,
+.portfolio .button:focus {
   box-shadow: var(--box-shabow);
 }
 .portfolio .section-title {
@@ -30,10 +31,13 @@
 .content-list > .item {
   /* calc((100% - кіль-сть_відступів_в_рядку * довжина_одного_відступу_в_рядку) / кіль-сть_елементів_в_рядку) */
   flex-basis: calc((100% - 50px) / 3);
+}
+.content-list .content-list__portfolio {
+  display: inline-block;
   transition: box-shadow 0.3s ease;
 }
-.content-list > .item:hover,
-.content-list > .item:focus {
+.content-list .content-list__portfolio:hover,
+.content-list .content-list__portfolio:focus {
   box-shadow: var(--portfolio-card-shadow-active);
 }
 .content-list > .item:not(:nth-child(3n)) {
