@@ -26,6 +26,7 @@ HOVER: OCEAN(#404BBF) */
 
 :root {
   --accent-color: #4d5ae5;
+  --accent-color-transparent: rgba(77, 90, 229, 0.9);
   --hover-color: #404bbf;
   --title-color: #2e2f42;
   --valid-fields: #31d0aa;
