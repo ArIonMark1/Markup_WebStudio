@@ -50,6 +50,25 @@
   display: block;
   max-width: 100%;
 }
+.modal {
+  position: relative;
+  overflow: hidden;
+}
+.modal__description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
+  background-color: var(--accent-color);
+  color: var(--section-bg-color);
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
+}
+.content-list__portfolio:hover .modal__description {
+  transform: translateY(0);
+}
 .short-description {
   padding: 32px 16px;
   border: 1px solid var(--image-bg-color);
