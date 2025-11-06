@@ -40,8 +40,9 @@
   padding-bottom: 120px;
 }
 .advantages .section-title {
-  height: 0;
-  visibility: hidden;
+  opacity: 0;
+  /* height: 0;
+  visibility: hidden; */
 }
 .advantages-list {
   display: flex;
@@ -219,4 +220,51 @@
 .customers-list .link:focus .icon {
   border-color: var(--hover-color);
   fill: var(--hover-color);
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(46, 47, 66, 0.4);
+}
+.backdrop.is-hiden {
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop > .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 408px;
+  min-height: 584px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.backdrop > .modal .close-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--button-background);
+  border: 1px solid var(--button-border);
+
+  padding: 0;
+}
+.backdrop > .modal .close-button:hover,
+.backdrop > .modal .close-button:focus {
+  background-color: var(--button-background-hover);
+}
+.icon-close-button {
+  width: 8px;
+  height: 8px;
+  fill: var(--button-color);
 }
