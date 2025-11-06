@@ -27,6 +27,10 @@ HOVER: OCEAN(#404BBF) */
 :root {
   --accent-color: #4d5ae5;
   --accent-color-transparent: rgba(77, 90, 229, 0.9);
+  --button-background: rgba(231, 233, 252, 1);
+  --button-background-hover: rgba(214, 216, 232, 0.8);
+  --button-color: rgba(46, 47, 66, 1);
+  --button-border: rgba(0, 0, 0, 0.1);
   --hover-color: #404bbf;
   --title-color: #2e2f42;
   --valid-fields: #31d0aa;

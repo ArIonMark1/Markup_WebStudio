@@ -76,7 +76,9 @@
             for Your Business
           </h1>
           <!-- відкриває модалку -->
-          <button class="button primary" type="button">Order Service</button>
+          <button class="button primary" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- description of our advantages  -->
@@ -510,6 +512,17 @@
         </div>
       </section>
     </footer>
+    <div class="backdrop is-hiden">
+      <div class="modal" data-modal>
+        <button type="button" class="button close-button" data-modal-close>
+          <svg class="icon icon-close-button">
+            <use
+              href="./images/decor_img/link_sprites.svg#icon-close-button"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script type="module" src="./js/control_connect.js"></script>
+    <script type="module" src="./js/modal_actions.js"></script>
   </body>
 </html>
