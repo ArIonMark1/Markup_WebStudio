@@ -103,6 +103,7 @@
 .abilities-list > .item {
   flex-basis: calc((100% - 50px) / 3);
   margin-right: 25px;
+  position: relative;
 }
 .abilities-list > .item:last-child {
   margin-right: 0px;
@@ -110,6 +111,16 @@
 .abilities-list img {
   display: block;
   max-width: 100%;
+}
+.abilities-list .description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 24px 0;
+  background-color: var(--description-bg-color);
+  color: var(--color-white);
+  text-transform: uppercase;
 }
 /* company-team */
 .company-team {
@@ -227,7 +238,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(46, 47, 66, 0.4);
+  background-color: var(--backdrop-color);
 }
 .backdrop.is-hiden {
   opacity: 0;
