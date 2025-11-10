@@ -40,6 +40,8 @@ HOVER: OCEAN(#404BBF) */
   --color-white: #ffffff;
   --image-bg-color: #e7e9fc;
   --section-bg-color: #f4f4fd;
+  --backdrop-color: rgba(46, 47, 66, 0.4);
+  --description-bg-color: rgba(47, 48, 68, 0.7);
 
   --portfolio-card-shadow-active: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -154,11 +156,11 @@ a {
 }
 /* header */
 .header {
-  border-bottom: 1px solid var(--image-bg-color);
+  outline: 1px solid var(--image-bg-color);
 }
 .header .link {
   display: block;
-  padding: 24px 0px;
+  padding: 23px 0px;
 }
 .header-container {
   display: flex;
