@@ -204,11 +204,12 @@ a {
   color: var(--title-color);
 }
 .navigation-list .link:hover,
-.navigation-list .link:focus {
+.navigation-list .link:focus,
+.navigation-list .link.active {
   color: var(--hover-color);
 }
-.navigation-list .link:hover:after,
-.navigation-list .link:focus:after {
+/* ============================================== */
+.navigation-list .link.active:after {
   content: "";
   position: absolute;
   display: block;
@@ -218,6 +219,7 @@ a {
   border-radius: 4px;
   bottom: 0px;
 }
+/* ============================================== */
 
 /* header contacts */
 .header-contacts {
