@@ -96,9 +96,7 @@
 }
 .sending::before {
   margin-right: 10px;
-  /* background-color: #ff6b08; */
   background-image: url("../images/decor_img/icon_send.svg");
-  fill: #ff6b08;
 }
 .sending:hover::before,
 .sending:focus::before {
@@ -109,7 +107,6 @@
   top: 50%;
   left: 30px;
   transform: translateY(calc(-50% + 45px));
-  /* background-color: chartreuse; */
   background-image: url("../images/decor_img/clipboard.svg");
 }
 .sending:hover::after,
