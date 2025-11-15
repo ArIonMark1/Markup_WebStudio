@@ -1,0 +1,115 @@
+@keyframes boxAnimation {
+  0% {
+    transform: translatex(0) scale(1);
+  }
+  100% {
+    transform: translatex(calc(1160px - 125px)) scale(1.5);
+  }
+}
+.contacts-container {
+  padding: 60px 0;
+  border: 2px dashed gray;
+}
+.contacts-container2 {
+  padding: 60px 0;
+  border: 2px dashed gray;
+  display: flex;
+}
+.block {
+  width: 100px;
+  height: 100px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: translateX(0);
+  transform: scale(1); */
+}
+.block:not(:last-child) {
+  margin-bottom: 52px;
+}
+.block1 {
+  background-color: #ff6b08;
+}
+.block2 {
+  background-color: #ffa26b;
+}
+.block3 {
+  background-color: aqua;
+}
+.block.is-animated {
+  animation-name: boxAnimation;
+  animation-duration: 3000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.subscript {
+  border: none;
+  margin-left: 40px;
+  padding: 18px 80px;
+  background-color: aqua;
+  border-radius: 4px;
+  font: inherit;
+  color: grey;
+  cursor: pointer;
+
+  transition: background-color 300ms ease, color 300ms ease 250ms;
+}
+.subscript:hover,
+.subscript:focus {
+  background-color: #ff6b08;
+  color: white;
+}
+/* .subscript::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #ff6b08;
+} */
+.sending {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  margin-left: 20px;
+  padding: 18px 30px;
+  background-color: cadetblue;
+  border-radius: 4px;
+  font: inherit;
+  color: antiquewhite;
+  overflow: hidden;
+}
+.btn::before,
+.btn::after {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  transition: transform 250ms ease;
+  background-size: contain;
+}
+.sending::before {
+  margin-right: 10px;
+  background-image: url("../images/decor_img/icon_send.svg");
+}
+.sending:hover::before,
+.sending:focus::before {
+  transform: translateY(-45px);
+}
+.sending::after {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(calc(-50% + 45px));
+  background-image: url("../images/decor_img/clipboard.svg");
+}
+.sending:hover::after,
+.sending:focus::after {
+  transform: translateY(-50%);
+}
