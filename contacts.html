@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Raleway:wght@800&display=swap"
+      rel="stylesheet" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/contacts.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="navigation">
+          <a
+            class="logo"
+            href="./index.html"
+            target="_self"
+            title="home_page"
+            aria-label="home_page"
+            >web<span>studio</span></a
+          >
+          <!-- aria-label при використанні svg читалки прочитують що це таке. атрибут будь-якого тегу -->
+          <ul class="navigation-list list">
+            <li class="item">
+              <a class="link" href="./index.html" target="_self">Studio</a>
+            </li>
+            <li class="item">
+              <a class="link" href="./portfolio.html" target="_self"
+                >Portfolio</a
+              >
+            </li>
+            <li class="item">
+              <a class="link active" href="./portfolio.html" target="_self"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- це не nav, тому що ці посилання не ведуть на інші сторінки -->
+        <ul class="list header-contacts">
+          <li class="item">
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="item">
+            <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+        <!-- також кнопки не входять до nav, тому що вони відкривають модальні вікна -->
+        <!-- посилання на соц. мережі теж не входять до nav -->
+      </div>
+    </header>
+    <main>
+      <div class="container contacts-container">
+        <p class="block block1 is-animated">Lorem</p>
+
+        <p class="block block2 is-animated">ipsum</p>
+
+        <p class="block block3 is-animated">dolor.</p>
+      </div>
+      <div class="container contacts-container2">
+        <button class="subscript" type="button">Subscription</button>
+        <button type="button" class="btn sending">Send message</button>
+      </div>
+    </main>
+    <footer>
+      <section class="footer_info">
+        <div class="container footer-container">
+          <div class="slogan">
+            <h2 class="title">company description</h2>
+            <a class="logo" href="./index.html" title="home_page"
+              >web<span>studio</span></a
+            >
+            <p class="description">
+              Increase the flow of customers and <br />
+              sales for your business with digital <br />
+              marketing & growth solutions.
+            </p>
+          </div>
+          <div class="social-media">
+            <p class="title">Social media</p>
+
+            <ul class="media-list list">
+              <li class="item">
+                <a
+                  class="media-list__link link-instagram"
+                  href="#"
+                  title="instagram">
+                  <svg class="icon icon-instagram">
+                    <use
+                      href="./images/decor_img/link_sprites.svg#icon-instagram
+                          "></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a
+                  class="media-list__link link-twitter"
+                  href="#"
+                  title="twitter">
+                  <svg class="icon icon-twitter">
+                    <use
+                      href="./images/decor_img/link_sprites.svg#icon-twitter
+                          "></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a
+                  class="media-list__link link-facebook"
+                  href="#"
+                  title="Facebook">
+                  <svg class="icon icon-facebook">
+                    <use
+                      href="./images/decor_img/link_sprites.svg#icon-facebook
+                          "></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a
+                  class="media-list__link link-linkedin"
+                  href="#"
+                  title="LinkedIn">
+                  <svg class="icon icon-linkedin">
+                    <use
+                      href="./images/decor_img/link_sprites.svg#icon-linkedin
+                          "></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
