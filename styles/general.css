@@ -26,7 +26,7 @@ HOVER: OCEAN(#404BBF) */
 
 :root {
   --accent-color: #4d5ae5;
-  --accent-color-transparent: rgba(77, 90, 229, 0.9);
+  --accent-color-transparent: rgba(77, 90, 229, 0.8);
   --button-background: rgba(231, 233, 252, 1);
   --button-background-hover: rgba(214, 216, 232, 0.8);
   --button-color: rgba(46, 47, 66, 1);
@@ -82,6 +82,9 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+body.modal-open {
+  overflow: hidden;
 }
 main {
   flex: 1;

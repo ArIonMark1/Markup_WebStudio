@@ -62,6 +62,7 @@
   height: 100%;
   padding: 30px 26px;
   background-color: var(--accent-color-transparent);
+
   color: var(--section-bg-color);
 
   overflow: auto;
