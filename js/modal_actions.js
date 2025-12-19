@@ -9,7 +9,16 @@ refs.closeModalBtn.addEventListener("click", toggleModal);
 refs.backdrop.addEventListener("click", onBackdropClick);
 
 function toggleModal() {
-  refs.backdrop.classList.toggle("is-hiden");
+  const scrollBarWidth =
+    window.innerWidth - document.documentElement.clientWidth;
+
+  if (!document.body.classList.contains("modal-open")) {
+    document.body.style.paddingRight = `${scrollBarWidth}px`;
+  } else {
+    document.body.style.paddingRight = `0px`;
+  }
+  document.body.classList.toggle("modal-open");
+  refs.backdrop.classList.toggle("is-hidden");
 }
 function onBackdropClick(event) {
   if (event.currentTarget === event.target) {

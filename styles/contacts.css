@@ -47,16 +47,17 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-.subscript {
+.button_contact {
+  cursor: pointer;
   border: none;
-  margin-left: 40px;
-  padding: 18px 80px;
-  background-color: aqua;
+  padding: 18px 30px;
+  margin-left: 30px;
   border-radius: 4px;
   font: inherit;
+}
+.subscript {
+  background-color: aqua;
   color: grey;
-  cursor: pointer;
-
   transition: background-color 300ms ease, color 300ms ease 250ms;
 }
 .subscript:hover,
@@ -64,24 +65,12 @@
   background-color: #ff6b08;
   color: white;
 }
-/* .subscript::before {
-  content: "";
-  width: 40px;
-  height: 40px;
-  background-color: #ff6b08;
-} */
 .sending {
   position: relative;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  border: none;
-  margin-left: 20px;
-  padding: 18px 30px;
   background-color: cadetblue;
-  border-radius: 4px;
-  font: inherit;
   color: antiquewhite;
   overflow: hidden;
 }

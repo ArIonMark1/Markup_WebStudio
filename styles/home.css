@@ -13,12 +13,13 @@
   text-align: center;
 
   background-color: var(--title-color);
+  position: relative;
   background-image: var(--gradient), url("../images/decor_img/office.jpg");
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 .hero .title {
   margin-bottom: 48px;
   color: var(--color-white);
@@ -239,8 +240,10 @@
   right: 0;
   bottom: 0;
   background-color: var(--backdrop-color);
+  opacity: 1;
+  transition: opacity 250ms ease;
 }
-.backdrop.is-hiden {
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
