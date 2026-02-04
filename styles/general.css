@@ -38,20 +38,24 @@ HOVER: OCEAN(#404BBF) */
   --border-grey: #8e8f99;
   --link-color: #afb1b8;
   --color-white: #ffffff;
+  --cubic-animation: cubic-bezier(0.4, 0, 0.2, 1);
   --image-bg-color: #e7e9fc;
   --section-bg-color: #f4f4fd;
   --backdrop-color: rgba(46, 47, 66, 0.4);
   --description-bg-color: rgba(47, 48, 68, 0.7);
 
-  --portfolio-card-shadow-active: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  --portfolio-card-shadow-active:
+    0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
   /* --portfolio-card-shadow-active: 0px 1px 1px rgba(46, 47, 66, 0.08),
     0px 4px 4px rgba(46, 47, 66, 0.16), 1px 4px 6px rgba(46, 47, 66, 0.08); */
 
-  --box-shabow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+  --box-shabow:
+    0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  --home-box-shadow: 0px 1px 6px rgba(46, 47, 68, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  --home-box-shadow:
+    0px 1px 6px rgba(46, 47, 68, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
   --gradient: linear-gradient(rgba(46, 47, 66, 0.7));
 
   --color-pending: #ffa500;
@@ -78,6 +82,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  cursor: default;
 
   display: flex;
   flex-direction: column;
@@ -116,21 +121,27 @@ a {
 .button.primary {
   color: var(--color-white);
   background-color: var(--accent-color);
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 250ms var(--cubic-animation);
 }
 .button.primary:hover,
 .button.primary:focus {
   background-color: var(--hover-color);
 }
+/* portfolio buttons */
 .button.secondary {
   color: var(--accent-color);
   background-color: var(--section-bg-color);
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: none;
+  transition:
+    box-shadow 250ms var(--cubic-animation),
+    background-color 250ms var(--cubic-animation),
+    color 250ms var(--cubic-animation);
 }
 .button.secondary:hover,
 .button.secondary:focus {
-  color: var(--color-white);
+  box-shadow: var(--box-shabow);
   background-color: var(--accent-color);
+  color: var(--color-white);
 }
 /* title */
 .title {
@@ -206,6 +217,10 @@ a {
 .logo span {
   color: var(--title-color);
 }
+.navigation-list .link {
+  color: var(--text-color);
+  transition: color 250ms var(--cubic-animation);
+}
 .navigation-list .link:hover,
 .navigation-list .link:focus,
 .navigation-list .link.active {
@@ -232,6 +247,7 @@ a {
 /* header contact list */
 .header-contacts .link {
   color: var(--text-color);
+  transition: color 250ms var(--cubic-animation);
 }
 .header-contacts .link:hover,
 .header-contacts .link:focus {
@@ -284,6 +300,7 @@ a {
   height: 40px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition: background-color 250ms var(--cubic-animation);
 }
 .footer_info .media-list .media-list__link .icon {
   width: 20px;
@@ -291,9 +308,7 @@ a {
   fill: var(--color-white);
 }
 .footer_info .media-list .media-list__link:hover,
-.footer_info .media-list .media-list__link:hover .icon,
-.footer_info .media-list .media-list__link:focus,
-.footer_info .media-list .media-list__link:focus .icon {
+.footer_info .media-list .media-list__link:focus {
   background-color: var(--accent-color);
 }
 /* .footer_info .social-media__list .item .link::before {

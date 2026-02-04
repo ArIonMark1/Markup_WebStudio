@@ -178,13 +178,13 @@
   align-items: center;
   /* padding: 12px; */
   border-radius: 50%;
-  transition: background-color 0.3s ease;
+  transition: background-color 250ms var(--cubic-animation);
 }
 .description .social-links__link .icon {
   width: 20px;
   height: 20px;
   fill: var(--link-color);
-  transition: fill 0.3s ease;
+  transition: fill 250ms var(--cubic-animation);
 }
 .description .social-links__link:hover,
 .description .social-links__link:focus {
@@ -218,13 +218,13 @@
   border: 1px solid var(--border-grey);
   border-radius: 4px;
   cursor: pointer;
-  transition: border-color 0.3s ease;
+  transition: border-color 250ms var(--cubic-animation);
 }
 .customers-list > .item > .link .icon {
   width: 104px;
   height: 56px;
   fill: var(--border-grey);
-  transition: fill 0.3s ease;
+  transition: fill 250ms var(--cubic-animation);
 }
 .customers-list .link:hover,
 .customers-list .link:hover .icon,
@@ -241,7 +241,7 @@
   bottom: 0;
   background-color: var(--backdrop-color);
   opacity: 1;
-  transition: opacity 250ms ease;
+  transition: opacity 250ms var(--cubic-animation);
 }
 .backdrop.is-hidden {
   opacity: 0;
